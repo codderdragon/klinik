@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNR Premium Hair Transplant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div class="contact-info">
+                <a href="https://wa.me/905377933564" target="_blank">
+                    <i class="fab fa-whatsapp"></i> +90 537 793 35 64
+                </a>
+                <span class="mail-info"><i class="fas fa-envelope"></i> emre_dener@outlook.com.tr</span>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn" id="currentLangBtn">🇹🇷 TR <i class="fas fa-chevron-down"></i></button>
+                <div class="lang-dropdown">
+                    <a href="#" onclick="changeLanguage('tr'); return false;">🇹🇷 Türkçe</a>
+                    <a href="#" onclick="changeLanguage('en'); return false;">🇬🇧 English</a>
+                    <a href="#" onclick="changeLanguage('ar'); return false;">🇸🇦 العربية</a>
+                    <a href="#" onclick="changeLanguage('pl'); return false;">🇵🇱 Polski</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container flex-between">
+            <a href="#" class="logo">
+                <i class="fas fa-hospital-user"></i> DNR <span>CLINIC</span>
+            </a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#process" data-lang="menu_process">Süreç</a></li>
+                    <li><a href="#results" data-lang="menu_results">Sonuçlar</a></li>
+                    <li><a href="#faq" data-lang="menu_faq">S.S.S</a></li>
+                    <li><a href="#info" data-lang="menu_info">Bilgi</a></li>
+                    <li><a href="https://wa.me/905377933564" class="btn-cta" data-lang="menu_contact">
+                        <i class="fab fa-whatsapp"></i> Ücretsiz Analiz
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg-slider">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1920&auto=format&fit=crop" class="active" alt="Operation">
+            <img src="images/Kisi1.jpeg" alt="Patient 1">
+            <img src="images/kisi2.jpeg" alt="Patient 2">
+            <img src="images/kisi4.jpeg" alt="Patient 3">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1 data-lang="hero_title">Hayalindeki Saçlara Kavuş</h1>
+            <p data-lang="hero_desc">DNR Clinic ile ömür boyu garantili, doğal ve yoğun saçlar.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/905377933564" class="btn-primary" data-lang="hero_btn">Randevu Al</a>
+                <a href="#results" class="btn-secondary" data-lang="menu_results">Sonuçları Gör</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="section-padding">
+        <div class="container">
+            <h2 class="section-title" data-lang="process_title">Operasyon Süreci</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3 data-lang="step1_title">Planlama</h3>
+                    <p data-lang="step1_desc">Uzmanlarımızla yüz yüze veya online ücretsiz analiz.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3 data-lang="step2_title">Operasyon</h3>
+                    <p data-lang="step2_desc">Maksimum greft sayısı ile ağrısız ekim işlemi.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3 data-lang="step3_title">Yeni Görünüm</h3>
+                    <p data-lang="step3_desc">Ertesi gün kontrol ve ömür boyu destek.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="bg-dark section-padding">
+        <div class="container">
+            <h2 class="section-title text-white" data-lang="results_title">Başarı Hikayeleri</h2>
+            <p class="section-subtitle text-white" style="opacity: 0.7;">Yüzlerce mutlu hasta, binlerce doğal sonuç.</p>
+            
+            <div class="gallery-wrapper">
+                <button class="scroll-btn left" onclick="scrollGallery(-1)"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="gallery-scroller" id="galleryScroller">
+                    
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <span class="badge">FUE GOLD</span>
+                            <img src="images/Kisi1.jpeg" alt="4500 Greft FUE">
+                            <div class="ba-labels"><span>ÖNCESİ</span><span>SONRASI</span></div>
+                        </div>
+                        <div class="card-details">
+                            <h4>4500 Greft FUE</h4>
+                            <p><i class="fas fa-check-circle"></i> Maksimum Yoğunluk</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <span class="badge">SAPPHIRE FUE</span>
+                            <img src="images/kisi2.jpeg" alt="4750 Greft FUE">
+                            <div class="ba-labels"><span>ÖNCESİ</span><span>SONRASI</span></div>
+                        </div>
+                        <div class="card-details">
+                            <h4>4750 Greft FUE</h4>
+                            <p><i class="fas fa-check-circle"></i> Doğal Ön Hat</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <span class="badge">FUE GOLD</span>
+                            <img src="images/kisi3.jpeg" alt="Saç Ekimi">
+                            <div class="ba-labels"><span>ÖNCESİ</span><span>SONRASI</span></div>
+                        </div>
+                        <div class="card-details">
+                            <h4>3000 Greft FUE</h4>
+                            <p><i class="fas fa-check-circle"></i> Tam Kapanma</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <span class="badge">DHI CHOI PEN</span>
+                            <img src="images/kisi4.jpeg" alt="3200 Greft DHI">
+                            <div class="ba-labels"><span>ÖNCESİ</span><span>SONRASI</span></div>
+                        </div>
+                        <div class="card-details">
+                            <h4>3200 Greft DHI</h4>
+                            <p><i class="fas fa-check-circle"></i> Tıraşsız Ekim</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <span class="badge">SAPPHIRE FUE</span>
+                            <img src="images/kisi5.jpg" alt="4600 Greft FUE">
+                            <div class="ba-labels"><span>ÖNCESİ</span><span>SONRASI</span></div>
+                        </div>
+                        <div class="card-details">
+                            <h4>4600 Greft FUE</h4>
+                            <p><i class="fas fa-check-circle"></i> Sıkılaştırma</p>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <span class="badge">SAPPHIRE FUE</span>
+                            <img src="images/kisi6.jpg" alt="4600 Greft FUE">
+                            <div class="ba-labels"><span>ÖNCESİ</span><span>SONRASI</span></div>
+                        </div>
+                        <div class="card-details">
+                            <h4>4600 Greft FUE</h4>
+                            <p><i class="fas fa-check-circle"></i> Sıkılaştırma</p>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <span class="badge">SAPPHIRE FUE</span>
+                            <img src="images/kisi7.jpg" alt="4600 Greft FUE">
+                            <div class="ba-labels"><span>ÖNCESİ</span><span>SONRASI</span></div>
+                        </div>
+                        <div class="card-details">
+                            <h4>4600 Greft FUE</h4>
+                            <p><i class="fas fa-check-circle"></i> Sıkılaştırma</p>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-card">
+                        <div class="card-image">
+                            <span class="badge">SAPPHIRE FUE</span>
+                            <img src="images/kisi8.jpg" alt="4600 Greft FUE">
+                            <div class="ba-labels"><span>ÖNCESİ</span><span>SONRASI</span></div>
+                        </div>
+                        <div class="card-details">
+                            <h4>4600 Greft FUE</h4>
+                            <p><i class="fas fa-check-circle"></i> Sıkılaştırma</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <button class="scroll-btn right" onclick="scrollGallery(1)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <p class="swipe-hint text-white" style="text-align:center; margin-top:10px; opacity:0.6; font-size:0.9rem;"><i class="fas fa-hand-pointer"></i> Kaydırmak için sürükleyin</p>
+        </div>
+    </section>
+
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <h2 class="section-title" data-lang="faq_title">Sıkça Sorulan Sorular</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question"><span data-lang="faq_q1">Saç ekiminden sonra şapka?</span> <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p data-lang="faq_a1">Medikal şapkayı 10 gün kullanmalısınız. Sonrasında normal şapka takabilirsiniz.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span data-lang="faq_q2">Ne zaman spor yapabilirim?</span> <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p data-lang="faq_a2">Hafif yürüyüş 3 gün, ağır spor 1 ay sonra.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span data-lang="faq_q3">Yıkama işlemi nasıl?</span> <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p data-lang="faq_a3">1 ay boyunca her gün losyon ve şampuan ile yıkanmalı.</p></div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question"><span data-lang="faq_q4">Bandaj ne zaman çıkar?</span> <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p data-lang="faq_a4">Operasyondan sonraki 2. gün ilk yıkamada çıkarılır.</p></div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question"><span data-lang="faq_q5">Özel şampuan süresi?</span> <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p data-lang="faq_a5">En az 1 ay kullanmanız önerilir.</p></div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question"><span data-lang="faq_q6">Panthenol sprey kullanımı?</span> <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p data-lang="faq_a6">Kabuklar dökülene kadar (yaklaşık 15 gün) nemlendirme için kullanılmalıdır.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="section-padding bg-light info-section">
+        <div class="container">
+            <h2 class="section-title" data-lang="info_main_title">Saç Ekimi Rehberi</h2>
+            <div class="info-content">
+                <h3 data-lang="info_h1">Saç Ekimi Nedir?</h3>
+                <p data-lang="info_p1">Saç ekimi, saç dökülmesi yaşanan bölgelere sağlıklı saç köklerinin nakledilmesiyle yapılan kalıcı bir tedavi yöntemidir. Bu işlem genellikle ense veya kulak arkası gibi dökülmeye dirençli bölgelerden alınan greftlerle gerçekleştirilir. FUE ve DHI gibi gelişmiş teknikler sayesinde işlem iz bırakmadan, doğal ve estetik sonuçlar sunar.</p>
+                <p data-lang="info_p2">Saç ekimi hem erkeklerde hem kadınlarda uygulanabilir ve kişinin saç yoğunluğunu kalıcı olarak artırır. Lokal anestezi altında yapılan işlem sonrası iyileşme süreci genellikle hızlıdır.</p>
+                
+                <h3 data-lang="info_h2">Saç Ekimi Nasıl Yapılır?</h3>
+                <p data-lang="info_p3">Temel olarak, saç ekimi saç köklerinin donör bölgeden alınıp saçsız bölgelere nakledilmesiyle gerçekleştirilir. Aşamalar şu şekildedir:</p>
+                <ul class="info-list">
+                    <li data-lang="info_li1"><strong>Muayene ve Planlama:</strong> İşlem öncesi dökülme seviyesi değerlendirilir. Doğal görünüm için planlama yapılır.</li>
+                    <li data-lang="info_li2"><strong>Donör Bölge Hazırlığı:</strong> Ense bölgesinden sağlıklı kökler lokal anestezi ile toplanır.</li>
+                    <li data-lang="info_li3"><strong>Greftlerin Toplanması:</strong> FUE yöntemi ile saç kökleri tek tek alınır.</li>
+                    <li data-lang="info_li4"><strong>Kanal Açma:</strong> Saç köklerinin yerleştirileceği kanallar doğal çıkış yönüne göre açılır.</li>
+                    <li data-lang="info_li5"><strong>Ekim:</strong> Toplanan kökler kanallara yerleştirilir.</li>
+                    <li data-lang="info_li6"><strong>İyileşme:</strong> 3-6 ay içinde yeni saçlar çıkar, tam sonuç 12 ayı bulur.</li>
+                </ul>
+
+                <h3 data-lang="info_h3">Kimler Saç Ekimi Yaptırmalı?</h3>
+                <p data-lang="info_p4">Genellikle 22 yaş üzerindeki, donör bölgesi yeterli olan bireyler için uygundur. İdeal adaylar:</p>
+                <ul class="info-list">
+                    <li data-lang="info_li7"><strong>Erkek Tipi Dökülme:</strong> Genetik faktörlere bağlı açıklığı olanlar.</li>
+                    <li data-lang="info_li8"><strong>Travmatik Kayıplar:</strong> Yanık veya yara izi nedeniyle saç kaybedenler.</li>
+                    <li data-lang="info_li9"><strong>Sağlık Uygunluğu:</strong> Operasyona engel kronik hastalığı olmayanlar.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">DNR <span>CLINIC</span></div>
+            <p>&copy; 2026 Tüm Hakları Saklıdır.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/905377933564" class="float-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
